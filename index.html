@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <base href=".">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>Italian</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+  <!-- start nav -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <img id="logo" src="./images/logo.png" alt="Logo" srcset="">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Search">Recipes</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- end nav -->
+  <!-- start banner -->
+  <section id="banner" class="d-flex justify-content-center
+      align-items-center flex-wrap">
+    <div>
+      <h1>Dinner with us :)</h1>
+      <h3>You Will feel amazing</h3>
+    </div>
+  </section>
+  <!-- end banner -->
+  <section id="Search">
+    <div class="container">
+      <h2 class="mt-3 text-center" id="Recipes"> Recipes ...</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <input type="text" name="" id="searchInput" placeholder="search.." class="form-control shadow border-0 mt-3">
+          <button id="searchBtn" class="btn m-3 bg-danger text-white btn-sm float-right">Search</button>
+          <div id="searchResult" class="mt-5"></div>
+        </div>
+        <div class="col-md-8" id="recipeDetails">
+
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
+<script src="js/script.js"></script>
+<script type="module" src="js/index.js"></script>
+
+</html>

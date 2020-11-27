@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'nautilus_pompiliusregular';
+    src: url('../fonts/nautilus-webfont.woff2') format('woff2'),
+        url('../fonts/nautilus-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 0.7rem;
+}
+
+a {
+    color: black;
+    display: block;
+    transition: all 1s ease-in-out;
+}
+
+.fa-li ,#Recipes{
+    color: #dc3545;
+}
+#Recipes {
+    position: relative;
+    margin-bottom: 2rem;
+}
+#Recipes::after {
+
+    display: block;
+    content: '';
+    width: 60px;
+    height: 4px;
+    background: #dc3545;
+    position: absolute;
+    left: 40%;
+    top: 3rem;
+
+}
+a:hover {
+    text-decoration: none;
+    border: none;
+    color: #dc3545;
+}
+
+#logo {
+    width: 15vw;
+}
+
+#banner {
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 93vh;
+}
+
+#banner h1,
+#banner h3 {
+    color: #fff;
+    font-family: 'nautilus_pompiliusregular';
+    letter-spacing: 2.7px;
+}
+
+@media only screen and (min-width: 600px) {
+    body {
+        font-size: 0.9rem;
+    }
+
+    #logo {
+        width: 10vw;
+    }
+    #Recipes::after {
+
+        left: 46%;
+       
+    
+    }
+}
